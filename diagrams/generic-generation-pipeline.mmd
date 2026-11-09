@@ -1,0 +1,8 @@
+flowchart TD
+  A["Receive declarative specification"] --> B["Parse and normalize"]
+  B --> C{"Model valid?"}
+  C -- "No" --> D["Report diagnostics"]
+  C -- "Yes" --> E["Resolve references and dependencies"]
+  E --> F["Apply generation rules"]
+  F --> G["Render output files"]
+  G --> H["Review and build"]
