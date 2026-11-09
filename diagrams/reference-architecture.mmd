@@ -1,0 +1,10 @@
+flowchart LR
+  A["Mapping authoring"] --> B["Input model"]
+  B --> C["Validation"]
+  C --> D["Normalized model"]
+  D --> E["Mapping and transformation rules"]
+  E --> F["Generation templates"]
+  F --> G["Generated artifacts"]
+  G --> H["Build and integration"]
+  Q["Schemas and quality rules"] --> C
+  R["Reusable template library"] --> F
