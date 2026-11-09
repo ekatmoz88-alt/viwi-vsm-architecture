@@ -1,0 +1,8 @@
+flowchart LR
+  S["Source interface"] --> I["Input values"]
+  I --> M["Mapping rule"]
+  C["Constants and context"] --> M
+  M --> T["Transformation"]
+  T --> O["Output values"]
+  O --> D["Target interface"]
+  V["Validation constraints"] -.-> M
