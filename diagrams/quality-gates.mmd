@@ -1,0 +1,11 @@
+flowchart TD
+  A["Specification changes"] --> B["Syntax and schema checks"]
+  B --> C["Semantic consistency checks"]
+  C --> D["Generation review"]
+  D --> E["Build and integration tests"]
+  E --> F["Release candidate"]
+  B --> X["Diagnostics and correction"]
+  C --> X
+  D --> X
+  E --> X
+  X --> A
