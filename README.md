@@ -1,29 +1,28 @@
-# VIWI / VSM — Sanitized Architecture Study
+# VIWI / VSM — Architecture Documentation
 
-> **Portfolio demonstration only.** This repository contains an independently authored, technology-neutral reference model for explaining service-mapping and code-generation concepts. It is not an implementation description, a reverse-engineered product specification, or a reproduction of any confidential manual or source code.
+> **Real project documentation.** This repository contains a sanitized architecture description of the VIWI/VSM project, based on project materials. It documents the service-mapping and code-generation workflow while replacing restricted identifiers and omitting confidential source code, manuals and configuration details.
 
 ## Scope
 
-The material illustrates a generic workflow in which a declarative mapping model is checked, normalized, transformed and used to produce software artifacts. All component names, interfaces and flows are intentionally generic.
+The material describes the documented VIWI/VSM workflow in which declarative mapping models are checked, normalized, transformed and used to produce software artefacts. Public labels are generalized where required to protect proprietary project details.
 
 - [Architecture overview](docs/architecture.md)
 - [Evidence, scope and limitations](docs/evidence-and-scope.md)
 - [Interactive diagrams](index.html)
 - [Diagram source files](diagrams/)
 
-## Diagrams
+## Architecture diagrams
 
-1. Reference architecture — authoring, validation, model processing and output.
-2. Generic generation pipeline — the conceptual sequence from input to artifacts.
+1. Project architecture — authoring, validation, model processing and output.
+2. Generation pipeline — the documented sequence from input to generated artefacts.
 3. Mapping data flow — source, transformation and target responsibilities.
 4. Quality gates — validation and review boundaries.
 
-## Important limitations
+## Publication boundaries
 
-- The diagrams are conceptual teaching aids, not verified product topology.
-- They do not assert the internal design, runtime behavior, deployment, technology adapters, algorithms or exact component boundaries of VIWI/VSM.
-- No confidential source files, manuals, schemas, configuration data, identifiers or proprietary error catalogs are included.
-- Any resemblance to a particular implementation is incidental to the use of common software-architecture patterns.
+- The diagrams describe the real VIWI/VSM project at a sanitized logical-architecture level; they are not a reconstruction of every physical server or installation-specific setting.
+- Proprietary source files, manuals, schemas, configuration data, identifiers and error catalogues are not published.
+- Generalized labels protect restricted implementation details while preserving the documented project workflow.
 
 ## Viewing locally
 
@@ -31,4 +30,4 @@ Open `index.html` in a browser. Mermaid is loaded from a public CDN, so an inter
 
 ## Status
 
-**Demonstration model — not an as-built architecture and not a product specification.**
+**Sanitized documentation of a real VIWI/VSM project.**
