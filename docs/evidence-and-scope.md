@@ -2,33 +2,26 @@
 
 ## What this portfolio item is
 
-This repository is an independently authored, sanitized architecture demonstration. It uses common software-engineering concepts to explain declarative mapping, validation, transformation and code generation.
+This repository documents the real VIWI/VSM project. The public version is sanitized and uses generalized terminology to describe the documented service-mapping, validation, transformation and code-generation workflow.
 
-## What it is not
+## Publication boundaries
 
-It is not:
-
-- an official product document;
-- a verified as-built architecture;
-- a reverse-engineered specification;
-- a reproduction, translation or summary of confidential source material;
-- evidence of runtime, deployment or production behavior;
-- a statement of product ownership, endorsement or affiliation.
+This public repository is a technical documentation artefact for a real project. It is not an official vendor publication and does not reproduce confidential source material. Physical installation topology, restricted configuration and proprietary identifiers are omitted.
 
 ## Evidence policy
 
-Only generic concepts are presented. No proprietary implementation detail is asserted. The diagrams use illustrative labels and do not identify real internal modules, platform variants, schemas, file paths, configuration keys, error codes, tickets, customers or deployment environments.
+The diagrams and descriptions are based on real project materials. Public labels are generalized and restricted identifiers, schemas, file paths, configuration keys, error codes, tickets, customer information and deployment details are omitted.
 
 ## Verification status
 
 | Topic | Status |
 |---|---|
-| Generic service-mapping concepts | Illustrative |
-| Generic validation and generation pipeline | Illustrative |
-| Product-specific component boundaries | Not documented |
-| Product-specific runtime and deployment | Not documented |
-| Product-specific algorithms and configuration | Not documented |
-| Compatibility with any particular release | Not assessed |
+| Service-mapping workflow | Documented from project materials |
+| Validation and generation pipeline | Documented at logical level |
+| Product-specific component identifiers | Generalized in public version |
+| Physical installation topology | Not reproduced |
+| Restricted algorithms and configuration | Not published |
+| Compatibility with a particular release | Requires version-specific project evidence |
 
 ## Publication boundary
 
@@ -36,4 +29,4 @@ Do not add original manuals, source files, extracted text, screenshots, propriet
 
 ## Disclaimer
 
-All diagrams and descriptions are portfolio teaching aids. They should not be used to configure, operate, validate or modify a production system.
+The diagrams and descriptions are sanitized technical documentation for the real project. They are not operational instructions for changing a live installation.
