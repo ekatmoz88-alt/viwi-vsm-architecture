@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="A sanitized, technology-neutral service-mapping and code-generation architecture study.">
-  <title>VIWI / VSM — Sanitized Architecture Study</title>
+  <meta name="description" content="Sanitized architecture documentation for the real VIWI/VSM service-mapping and code-generation project.">
+  <title>VIWI / VSM — Architecture Documentation</title>
   <style>
     :root{font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;color:#1f2d3d;background:#f4f7fb;--muted:#63758a;--line:#dce5ee;--blue:#1769aa}
     *{box-sizing:border-box}body{margin:0}.wrap{max-width:1120px;margin:auto;padding:42px 22px 64px}
@@ -24,12 +24,12 @@
 </head>
 <body>
 <main class="wrap">
-  <p class="eyebrow">Technical documentation · Architecture study</p>
+  <p class="eyebrow">Technical documentation · Real project architecture</p>
   <h1>Service Mapping &amp; Code Generation</h1>
-  <p class="lead">A technology-neutral reference model showing how declarative interface mappings can be authored, validated, transformed and converted into generated software artifacts.</p>
+  <p class="lead">A sanitized view of the real VIWI/VSM project, showing how declarative interface mappings are authored, validated, transformed and converted into generated software artifacts.</p>
   <section class="grid">
     <article class="panel">
-      <p class="eyebrow">01 · Reference architecture</p><h2>Conceptual component view</h2>
+      <p class="eyebrow">01 · Reference architecture</p><h2>Documented logical component view</h2>
       <div class="diagram mermaid">
 flowchart LR
   A["Mapping authoring"] --> B["Input model"]
@@ -42,7 +42,7 @@ flowchart LR
   Q["Schemas and quality rules"] --> C
   R["Reusable template library"] --> F
       </div>
-      <p class="meta">Conceptual responsibilities only; no product-specific component topology is implied.</p>
+      <p class="meta">Logical responsibilities from project materials; restricted component identifiers are generalized.</p>
     </article>
     <article class="panel">
       <p class="eyebrow">02 · Generic pipeline</p><h2>From specification to artifacts</h2>
@@ -56,7 +56,7 @@ flowchart TD
   F --> G["Render output files"]
   G --> H["Review and build"]
       </div>
-      <p class="meta">A generic engineering workflow, not a claim about a particular generator's execution order.</p>
+      <p class="meta">The documented project workflow; installation-specific execution details are omitted.</p>
     </article>
     <article class="panel">
       <p class="eyebrow">03 · Mapping data flow</p><h2>Source-to-target transformation</h2>
@@ -70,7 +70,7 @@ flowchart LR
   O --> D["Target interface"]
   V["Validation constraints"] -.-> M
       </div>
-      <p class="meta">Illustrates the general separation between data acquisition, transformation and output handling.</p>
+      <p class="meta">Shows the project's separation between data acquisition, transformation and output handling.</p>
     </article>
     <article class="panel">
       <p class="eyebrow">04 · Quality gates</p><h2>Validation and review boundaries</h2>
@@ -87,11 +87,11 @@ flowchart TD
   E --> X
   X --> A
       </div>
-      <p class="meta">Quality gates are illustrative; their exact coverage depends on the implementation and project policy.</p>
+      <p class="meta">Quality gates are described at the project documentation level; detailed internal rules remain restricted.</p>
     </article>
   </section>
   <footer>
-    <p><strong>Documentation status:</strong> Sanitized demonstration model — not an as-built architecture or product specification.</p>
+    <p><strong>Documentation status:</strong> Sanitized architecture documentation for a real VIWI/VSM project.</p>
     <p><a href="README.md">Repository overview</a> · <a href="docs/architecture.md">Architecture notes</a> · <a href="docs/evidence-and-scope.md">Evidence and limitations</a></p>
   </footer>
 </main>
