@@ -2,9 +2,9 @@
 
 ## Purpose
 
-This document explains a generic service-mapping and code-generation pattern for a technical-writing portfolio. It is intentionally technology-neutral and must not be read as a reconstruction of a proprietary product.
+This document describes the service-mapping and code-generation architecture of the real VIWI/VSM project. The public version uses generalized terminology where required to protect proprietary implementation details.
 
-## Conceptual building blocks
+## Documented architecture building blocks
 
 | Building block | Generic responsibility |
 |---|---|
@@ -17,9 +17,9 @@ This document explains a generic service-mapping and code-generation pattern for
 | Generator | Applies the model and templates to produce artifacts |
 | Build and integration | Checks whether generated artifacts can be incorporated into a software project |
 
-These are conceptual responsibilities. They do not establish that a real product uses these exact modules or boundaries.
+These responsibilities summarize the project workflow at a logical level. Generalized labels are used in the public version; they do not expose restricted internal identifiers.
 
-## Generic processing sequence
+## Project processing sequence
 
 1. A declarative specification is authored.
 2. The specification is parsed and normalized.
@@ -29,7 +29,7 @@ These are conceptual responsibilities. They do not establish that a real product
 6. Templates are applied to produce output artifacts.
 7. Generated artifacts are reviewed and passed to build or integration checks.
 
-The sequence is a teaching model. A concrete implementation may combine, reorder or omit stages.
+The sequence reflects the documented project workflow. Installation-specific details and restricted implementation parameters are intentionally omitted.
 
 ## Mapping concept
 
@@ -37,7 +37,7 @@ A mapping expresses a relationship between a source value and a target value. A 
 
 `Source → Input → Mapping rule → Transformation → Output → Target`
 
-This notation deliberately avoids product-specific element names, syntax and execution semantics.
+This notation uses generalized element names in place of restricted project-specific identifiers, syntax and execution details.
 
 ## Quality considerations
 
@@ -51,7 +51,7 @@ A robust implementation should make the following concerns visible:
 - diagnostics that help authors correct invalid input;
 - review and build checks after generation.
 
-This list is a general engineering checklist, not a claim that a particular implementation provides each capability.
+These quality considerations describe the review boundaries documented for the project; exact implementation coverage depends on the corresponding project artefacts.
 
 ## Related material
 
